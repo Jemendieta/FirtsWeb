@@ -1,0 +1,337 @@
+/*  */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0px;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fjalla one", sans-serif;
+}
+h1 {
+  line-height: 1.5em;
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: -0.2px;
+  text-transform: lowercase;
+  color: #f4f9f9;
+  margin: 0px;
+}
+h2 {
+  margin: 0px;
+  padding: 30px 0px;
+  text-transform: uppercase;
+  color: #005086;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 30px;
+}
+.menu {
+  height: inherit;
+}
+.head {
+  background-color: #3D3F4E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+
+}
+.head-figure {
+  margin: 0px 0px 0px 20px;
+  width: 120px;
+  height: 50px;
+}
+
+.head-figure_img {
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  height: inherit;
+}
+li {
+  height: inherit;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  color: #f4f9f9;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 20px;
+  padding: 0px 10px;
+  /* line-height: 70px; */
+}
+/* main */
+.main {
+ 
+  height: 300px;
+  background-color: #222625;
+  /* background-image: url(portada.jpg); */
+  /* background-size: 500px 300px;
+  background-repeat: no-repeat; */
+  /* background-position-x: right; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main figure{
+  margin: 0px;
+  width: 500px;
+  height:inherit;
+}
+.main img{
+  width:inherit;
+  height:inherit;
+}
+/* .main h1{
+  width: 50%; 
+  margin-left: 30px; 
+} */
+.main span {
+  color: #26D491;
+}
+
+/* projectos */
+
+.projects {
+  padding: 0px 30px 10px 30px;
+  background-color: #744bc525;
+}
+.project {
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0px 0px 7px #555;
+  /* derecha abajo difuminado color */
+  padding: 20px;
+  margin: 0px 0px 30px 0px;
+  /* margin: 0 20px 20px 20px; */
+  /* margin-bottom:35px; */
+  background-color: #f4f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-title {
+  margin: 0px;
+  font-size: 25px;
+  /* margin-bottom: 10px; */
+}
+.project-dato {
+  margin-top: 20px;
+}
+.project-date {
+  margin-top: 20px;
+}
+
+.project-link {
+  margin-top: 20px;
+}
+.project-link a {
+  text-decoration: none;
+  color: black;
+}
+.project-description {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.project-left {
+  width: 500px;
+}
+.project-container {
+  width: 400px;
+}
+.project-image {
+  width: inherit;
+}
+
+/* tecnologys
+.tecnologia-title {
+  margin-left: 30px;
+} */
+.tecnologys {
+  padding: 0px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.tecnology {
+  /* border:1px solid black; */
+  margin: 0px 20px 30px 0px;
+  width: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background-color: #f4fbff;
+}
+.tecnology-container {
+  margin: 0px;
+  width: inherit;
+  height: 200px;
+}
+.tecnology-img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.description-container {
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.description-title {
+  margin: 0px;
+}
+.description-tecnology {
+  text-align: left;
+}
+.description-container input {
+  border: 1px solid #005086;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: #005086;
+  background-color: #e8eae6;
+}
+
+/* contacto */
+
+.contact{
+  background-color: #EBE5F7;
+  padding: 30px 30px 30px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-form{
+  margin-left: 30px;
+}
+
+.contact-form h2{
+  color: #00508A;
+  padding:0px;
+}
+.contact-form input{
+  border-color:gray;
+  border-style: solid;
+  padding: 5px 5px 5px 35px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-image: url(img/email.svg);
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  background-position-y: center;
+  background-position-x: 5px;
+  outline: none;
+  margin-top:20px;
+}
+.contact-form button{
+  display:block;
+  border: 1px solid #282C34;
+  background-color:#e8eae6;
+  color: #005086;
+  padding: 5px 25px;
+  cursor: pointer;
+  font-size:16px;
+  margin-top:10px;
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -ms-border-radius:5px;
+  -o-border-radius:5px;
+}
+
+.social{
+  display: flex;
+}
+.social-link{
+  width:50px;
+  height: 50px;
+  margin-left:20px;
+}
+.social-link.github{
+  background-image: url(img/github-logo.svg);
+  background-size: 50px 50px;
+
+}
+.social-link.facebook{
+  background-image: url(img/facebook.svg);
+  background-size: 50px 50px;
+
+}
+.social-link.instagram{
+  background-image: url(img/instagram.svg);
+  background-size: 50px 50px;
+
+}
+.social-link.twitter{
+  background-image: url(img/twitter.svg);
+  background-size: 50px 50px;
+
+}
+/* footer */
+
+.footer {
+  background: #7D0633;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+}
+.footer-details {
+  display: flex;
+  align-items: center;
+}
+.footer-details img {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+}
+.footer p{
+  color: #f4f9f9;
+}
+
+/* wrapper */
+.wrapper{
+  width: 1200px;
+  /* border: 1px solid red; */
+  margin: 0px auto;
+  display: inherit;
+  align-items: inherit;
+  justify-content:inherit;
+  height:inherit;
+  flex-wrap: inherit;
+}
