@@ -5,6 +5,7 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
   margin: 0px;
+  font-size: 16px;
 }
 h1,
 h2,
@@ -23,11 +24,11 @@ h1 {
 }
 h2 {
   margin: 0px;
-  padding: 30px 0px;
+  padding: 1.5rem 0px;
   text-transform: uppercase;
   color: #005086;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 30px;
+  font-size: 1.6rem;
 }
 .menu {
   height: inherit;
@@ -87,6 +88,7 @@ li {
   flex-wrap: wrap;
   height: 300px;
   justify-content: space-between;
+  align-items: center;
 }
 .main figure {
   margin: 0px;
@@ -96,6 +98,7 @@ li {
 .main img {
   width: inherit;
   height: inherit;
+  /* width: 100%; */
 }
 /* .main h1{
   width: 50%; 
@@ -108,11 +111,10 @@ li {
 /* projectos */
 
 .projects {
-  padding: 0px 30px 10px 30px;
+  padding: 0px 1.5rem 10px 1.5rem;
   background-color: #744bc525;
 }
 .project {
-  /* border: 1px solid black; */
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -121,9 +123,7 @@ li {
   box-shadow: 0px 0px 7px #555;
   /* derecha abajo difuminado color */
   padding: 4%;
-  margin: 0px 0px 30px 0px;
-  /* margin: 0 20px 20px 20px; */
-  /* margin-bottom:35px; */
+  margin: 0px 0px 1.8rem 0px;
   background-color: #f4f9f9;
   display: flex;
   flex-wrap: wrap;
@@ -132,9 +132,14 @@ li {
 }
 
 .project-title {
-  margin: 0px;
-  font-size: 25px;
-  /* margin-bottom: 10px; */
+  margin: 0 0 0.7rem 0;
+  font-size: 1.3rem;
+}
+.project-dato,
+.project-date,
+.project-link,
+.project-description {
+  margin: 0.7rem 0;
 }
 .project-dato {
   margin-top: 20px;
@@ -169,24 +174,32 @@ li {
 .tecnologia-title {
   margin-left: 30px;
 } */
+.tecnology-title {
+  margin: 0px;
+  padding: 1.5rem 0 1.5rem 1.5rem;
+}
 .tecnologys {
-  padding: 0px 30px;
+  padding: 0px 1.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 .tecnology {
-  /* border:1px solid black; */
-  margin: 0px 20px 30px 0px;
-  width: 480px;
-  border-radius: 10px;
+  margin: 0px 2% 40px 0px;
+  width: 48%;
   overflow: hidden;
   flex-shrink: 0;
   background-color: #f4fbff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 .tecnology-container {
   margin: 0px;
-  width: inherit;
+  /* width: inherit; */
+  width: 100%;
   height: 200px;
 }
 .tecnology-img {
@@ -195,8 +208,8 @@ li {
   object-fit: cover;
 }
 .description-container {
-  margin: 20px 40px;
-  margin-top: -40px;
+  margin: 0px 1.8rem 1.3rem 1.5rem;
+  margin-top: -2rem;
   background-color: #ffffff;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -341,6 +354,7 @@ li {
 }
 
 @media screen and (max-width: 767px) {
+  /* header */
   .head {
     height: auto;
     display: block;
@@ -363,10 +377,12 @@ li {
     margin: 0px 0px 0px 0px;
     padding: 10px 0px;
   }
+  /* project */
   .project {
     display: block;
-    font-size: 16px;
+    /* font-size: 16px; */
     box-shadow: 0px 0px 8px black;
+    padding: 2%;
   }
   .project-left {
     width: auto;
@@ -384,34 +400,116 @@ li {
   .project-date,
   .project-link,
   .project-description {
-    margin: 1em 0;
+    margin: 0.6rem 0;
   }
   .projects h2 {
-    font-size: 1.5em;
-    padding: 1em 0;
+    font-size: 1.3rem 0;
+    padding: 1.5rem 0;
+  }
+  /* tecnologys */
+  .tecnology-title {
+    /* margin: 0px; */
+    padding: 1.3em 0 1.3rem 1.5rem;
+    font-size: 1.5rem;
+  }
+  .tecnologys {
+    display: block;
+  }
+  .tecnology {
+    width: 100%;
+    margin: 0px 2% 3rem 0px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .projects {
     font-size: 0.8em;
-    padding: 0 1.2em 0.8em 1.2em;
+    padding: 0 1.2rem 6px 1.2rem;
   }
   .project {
-    font-size: 14px;
+    /* font-size: 14px; */
     box-shadow: 0px 0px 6px black;
+    padding: 3%;
+  }
+  .projects h2 {
+    padding: 1.1rem 0;
+    font-size: 1.4rem;
+  }
+  .project-title {
+    font-size: 1.2rem;
+  }
+  .project-dato,
+  .project-date,
+  .project-link,
+  .project-description {
+    margin: 0.6rem 0;
+    font-size: 1rem;
   }
   .link {
     padding: 0.5em 0;
+  }
+  .tecnology-title {
+    padding: 1.1em 0 1.1rem 1.2rem;
+    font-size: 1.4rem;
+  }
+  .tecnologys {
+    padding: 0px 1.2rem;
+  }
+  .tecnology {
+    margin: 0px 2% 2.5rem 0px;
+  }
+  .description-container {
+    padding: 1rem;
+    margin: 0px 1.5rem 1.3rem 1.5rem;
+    margin-top: -1.5rem;
   }
 }
 
 @media screen and (max-width: 320px) {
   .project {
     box-shadow: 0px 0px 4px black;
-    margin-bottom: 1.5em;
+    margin-bottom: o.9rem;
+    padding: 4%;
   }
   .link {
     padding: 0.4em 0;
+  }
+  .projects {
+    pad: 0px 0.9rem 6px 0.9rem;
+  }
+  .projects h2 {
+    padding: 1.1rem 0;
+    font-size: 1.3rem;
+  }
+  .project-title {
+    font-size: 1.1rem;
+  }
+  .project-dato,
+  .project-date,
+  .project-link,
+  .project-description {
+    margin: 0.6rem 0;
+    font-size: 0.9rem;
+  }
+  .tecnology-title {
+    padding: 1.1em 0 1.1rem 0.9rem;
+    font-size: 1.3rem;
+  }
+  .tecnologys {
+    padding: 0px 0.9rem;
+  }
+  .tecnology {
+    margin: 0px 2% 2rem 0px;
+  }
+  .description-container {
+    padding: 0.8rem;
+    margin: 0px 1rem 1.3rem 1rem;
+    margin-top: -1.5rem;
+  }
+  .description-title {
+    font-size: 1.1rem;
+  }
+  .description-tecnology {
+    font-size: 0.9rem;
   }
 }
