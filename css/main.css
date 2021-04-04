@@ -35,7 +35,7 @@ h2 {
 }
 .head {
   align-items: center;
-  background-color: #3d3f4e;
+  background-color: #31112c;
   display: flex;
   flex-wrap: wrap;
   height: 90px;
@@ -242,19 +242,19 @@ li {
 /* contacto */
 
 .contact {
-  background-color: #ebe5f7;
-  padding: 30px 30px 30px 30px;
+  align-items: center;
+  background-color: #31112c;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  padding: 1.7rem 2.5rem 1.7rem 2.5rem;
 }
 .contact-form {
-  margin-left: 30px;
+  /* margin-left: 30px; */
 }
 
 .contact-form h2 {
-  color: #00508a;
+  color: #e8eae6;
   padding: 0px;
 }
 .contact-form input {
@@ -299,7 +299,7 @@ li {
   margin-left: 20px;
 }
 .social-link.github {
-  background-image: url(../img/github-logo.svg);
+  background-image: url(../img/github.svg);
   background-size: 50px 50px;
 }
 .social-link.facebook {
@@ -421,6 +421,27 @@ li {
   }
 }
 
+@media screen and (max-width: 572px) {
+  .contact {
+    justify-content: center;
+    padding: 1.7rem 2.5rem 0.5rem 2.5rem;
+  }
+  .contact-form {
+    text-align: center;
+    /* margin: 0px; */
+  }
+  .contact-form button {
+    margin: 1rem auto 1.3rem auto;
+  }
+  .social {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .social-link {
+    margin-bottom: 1rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .projects {
     font-size: 0.8em;
@@ -511,5 +532,8 @@ li {
   }
   .description-tecnology {
     font-size: 0.9rem;
+  }
+  .social-link.github {
+    margin-left: 0px;
   }
 }
