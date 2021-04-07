@@ -18,8 +18,8 @@ h1 {
   font-size: 40px;
   font-weight: normal;
   letter-spacing: -0.2px;
-  text-transform: lowercase;
-  color: #282c34;
+  /* text-transform: lowercase; */
+  color: #4d0b24;
   margin: 0px;
 }
 h2 {
@@ -29,13 +29,18 @@ h2 {
   color: #005086;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem;
+  font-weight: bold;
 }
 .menu {
   height: inherit;
 }
+.menu ul li:hover {
+  background-color: #440e22;
+  transition-duration: 0.4s;
+}
 .head {
   align-items: center;
-  background-color: #31112c;
+  background-color: #7d0633;
   display: flex;
   flex-wrap: wrap;
   height: 90px;
@@ -84,6 +89,7 @@ li {
   align-items: center;
   background-color: #222625;
   background-repeat: no-repeat; */
+  background-color: #ededed;
   display: flex;
   flex-wrap: wrap;
   height: 300px;
@@ -105,7 +111,7 @@ li {
   margin-left: 30px; 
 } */
 .main span {
-  color: #26d491;
+  color: #e9eaec;
 }
 
 /* projectos */
@@ -176,7 +182,7 @@ li {
 } */
 .tecnology-title {
   margin: 0px;
-  padding: 1.5rem 0 1.5rem 1.5rem;
+  padding: 1.5rem 0 1.5rem 0rem;
 }
 .tecnologys {
   padding: 0px 1.5rem;
@@ -243,7 +249,8 @@ li {
 
 .contact {
   align-items: center;
-  background-color: #31112c;
+  background-color: #7d0633;
+  /* background-color: #31112c; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -314,10 +321,12 @@ li {
   background-image: url(../img/twitter.svg);
   background-size: 50px 50px;
 }
+
 /* footer */
 
 .footer {
-  background: #7d0633;
+  /* background: #7d0633; */
+  background: #31112c;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -351,6 +360,30 @@ li {
 }
 /* Media queries */
 @media screen and (max-width: 1024px) {
+  .tecnology-title {
+    padding: 1.3em 0 1.3rem 1.5rem;
+    margin: 0px;
+  }
+  .main {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 1.5rem;
+  }
+  h1 {
+    z-index: 3;
+  }
+  .main figure {
+    width: auto;
+  }
+  .main figure img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -422,6 +455,9 @@ li {
 }
 
 @media screen and (max-width: 572px) {
+  h1 {
+    font-size: 2rem;
+  }
   .contact {
     justify-content: center;
     padding: 1.7rem 2.5rem 0.5rem 2.5rem;
@@ -440,9 +476,24 @@ li {
   .social-link {
     margin-bottom: 1rem;
   }
+  .footer {
+    display: block;
+    text-align: center;
+  }
+  .footer-details {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+
+    /* margin: auto; */
+  }
+  .main {
+    padding: 2rem 1.2rem;
+  }
   .projects {
     font-size: 0.8em;
     padding: 0 1.2rem 6px 1.2rem;
@@ -484,9 +535,17 @@ li {
     margin: 0px 1.5rem 1.3rem 1.5rem;
     margin-top: -1.5rem;
   }
+  .contact,
+  .footer {
+    padding: 1rem 1.3rem 0.5rem 1.3rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
+  h1 {
+    padding: 0.2rem;
+    background-color: rgba(255, 255, 255, 0.521);
+  }
   .project {
     box-shadow: 0px 0px 4px black;
     margin-bottom: o.9rem;
@@ -532,6 +591,11 @@ li {
   }
   .description-tecnology {
     font-size: 0.9rem;
+  }
+  .contact,
+  .footer {
+    padding: 1rem 1rem 0.5rem 1rem;
+    /* font-size: 1em; */
   }
   .social-link.github {
     margin-left: 0px;
